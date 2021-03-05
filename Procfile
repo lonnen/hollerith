@@ -1,1 +1,1 @@
-web: gunicorn hollerith.wsgi --log-file -
+web: gunicorn hollerith.wsgi -b 0.0.0.0:${PORT:-8000} --log-file -
